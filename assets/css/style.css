@@ -8,8 +8,8 @@
   --surface: #FFFFFF;
   --text: #2B1D14;
   --text-soft: #6B5B4C;
-  --accent: #B4762A;
-  --accent-dark: #96601F;
+  --accent: #8A5A1E;
+  --accent-dark: #6E4413;
   --dark: #1F150E;
   --border: #E9DCC8;
   --radius: 12px;
@@ -391,7 +391,7 @@ textarea {
   background: var(--surface);
   color: var(--text);
 }
-input:focus, textarea:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 3px rgba(180, 118, 42, 0.25); }
+input:focus, textarea:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 3px rgba(138, 90, 30, 0.25); }
 textarea { min-height: 140px; resize: vertical; }
 button.btn, .btn {
   display: inline-block;

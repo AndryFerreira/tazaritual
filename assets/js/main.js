@@ -24,24 +24,43 @@
     yearEls[i].textContent = currentYear;
   }
 
-  /* ---------- Newsletter (solo visual, sin backend) ---------- */
+  /* ---------- Newsletter (FormSubmit AJAX) ---------- */
   var newsletterForms = document.querySelectorAll(".newsletter-form");
   for (var n = 0; n < newsletterForms.length; n++) {
     (function (form) {
       var msgBox = form.parentElement.querySelector(".newsletter-message");
+      function showMsg(text, ok) {
+        if (!msgBox) return;
+        msgBox.innerHTML = "";
+        var box = document.createElement("p");
+        box.className = ok ? "form-success" : "form-error";
+        box.setAttribute("role", "status");
+        box.textContent = text;
+        msgBox.appendChild(box);
+      }
       form.addEventListener("submit", function (e) {
         e.preventDefault();
-        var email = form.querySelector('input[type="email"]');
-        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+        var emailEl = form.querySelector('input[type="email"]');
+        var email = emailEl ? emailEl.value.trim() : "";
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
           showFormError(form, "Escribe un correo válido para continuar.");
           return;
         }
-        form.reset();
-        var box = document.createElement("p");
-        box.className = "form-success";
-        box.setAttribute("role", "status");
-        box.textContent = "¡Gracias! Muy pronto activaremos el boletín.";
-        if (msgBox) { msgBox.innerHTML = ""; msgBox.appendChild(box); }
+        var btn = form.querySelector('button[type="submit"]');
+        if (btn) btn.disabled = true;
+        fetch("https://formsubmit.co/ajax/soporte@tazaritual.com", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({ email: email, _subject: "Nueva suscripción al boletín — TazaRitual" })
+        }).then(function (r) { return r.json(); })
+          .then(function () {
+            form.reset();
+            showMsg("¡Gracias por suscribirte! Te avisaremos cuando publiquemos nuevo contenido.", true);
+          })
+          .catch(function () {
+            showMsg("Hubo un problema al enviar. Inténtalo de nuevo en unos minutos.", false);
+          })
+          .finally(function () { if (btn) btn.disabled = false; });
       });
     })(newsletterForms[n]);
   }

@@ -1,0 +1,3 @@
+# Archivo ads.txt — PLANTILLA. Ver ADSENSE.md
+# Cuando Google apruebe tu cuenta, descomenta y sustituye:
+# google.com, [SUSTITUIR: ca-pub-ID], DIRECT, f08c47fec0942fa0

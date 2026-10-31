@@ -4,4 +4,4 @@ User-agent: Googlebot
 Allow: /
 User-agent: *
 Allow: /
-Sitemap: https://www.tazaritual.com/sitemap.xml
+Sitemap: https://tazaritual.com/sitemap.xml

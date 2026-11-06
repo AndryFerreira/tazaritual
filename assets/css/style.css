@@ -688,3 +688,9 @@ body.ads-preview .ad-slot::before {
 .share-buttons { display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .share-btn { display: inline-block; padding: 0.55rem 1rem; border-radius: 999px; border: 1px solid #d8cbb8; background: #fff; color: #2A1B12; font-size: 0.92rem; text-decoration: none; cursor: pointer; font-family: inherit; }
 .share-btn:hover { background: #2A1B12; color: #F6EFE4; border-color: #2A1B12; text-decoration: none; }
+
+/* Caja del autor */
+.author-box { background: #faf6ef; border: 1px solid #e5ddd2; border-left: 4px solid #8a5a24; border-radius: 10px; padding: 1rem 1.25rem; margin: 2rem 0; }
+.author-box h2 { font-size: 1.05rem; margin: 0 0 0.4rem; color: #2A1B12; }
+.author-box p { margin: 0.3rem 0; }
+.author-box p:last-child { margin-bottom: 0; }

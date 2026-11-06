@@ -4,6 +4,14 @@ Guía para integrar Google AdSense en este sitio **en el orden correcto y sin er
 
 > **Regla de oro: NUNCA inventes un `ca-pub-ID`.** El ID de editor solo existe cuando Google aprueba tu cuenta. Un ID falso en `ads.txt` o en el código invalida la verificación y puede causar problemas con tu cuenta.
 
+## Estado actual — verificación para revisión (6 nov 2026)
+
+- **ID de editor real:** `ca-pub-3527045319039824` (proporcionado por Andry el 6 nov 2026 desde su cuenta de AdSense).
+- **Código de verificación colocado en las 60 páginas** (en `<head>`, antes del CSS): meta `google-adsense-account` + script `adsbygoogle.js?client=ca-pub-3527045319039824`. Es el fragmento que Google pide para revisar el sitio; **no muestra anuncios** hasta la aprobación. Se colocó sin condicionar al consentimiento porque el rastreador de Google no acepta el banner y sin el código visible no inicia la revisión.
+- **`ads.txt` activado** con la línea real: `google.com, pub-3527045319039824, DIRECT, f08c47fec0942fa0`.
+- **Slots de anuncios (`header`, `in-article`, `sidebar`) SIGUEN VACÍOS**: los placeholders `PEGAR CÓDIGO ADSENSE AQUÍ` no se tocan hasta que Google apruebe el sitio ("Ready"). Solo entonces se pegan los códigos de bloques de anuncios o se activan los anuncios automáticos.
+- **Pendiente tras la aprobación:** verificación de identidad con documento oficial, y activar los slots. La personalización de anuncios debe respetar el consentimiento (ver nota CMP/TCF abajo).
+
 ## Dónde están los placeholders de anuncios
 
 Los espacios para anuncios existen como `div` invisibles (`display:none` por defecto; no ocupan espacio ni simulan anuncios). Cada uno lleva un comentario que indica dónde pegar el código real:

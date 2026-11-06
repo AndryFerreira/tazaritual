@@ -1,3 +1,2 @@
-# Archivo ads.txt — PLANTILLA. Ver ADSENSE.md
-# Cuando Google apruebe tu cuenta, descomenta y sustituye:
-# google.com, [SUSTITUIR: ca-pub-ID], DIRECT, f08c47fec0942fa0
+# ads.txt — TazaRitual (ID real, 6 nov 2026)
+google.com, pub-3527045319039824, DIRECT, f08c47fec0942fa0

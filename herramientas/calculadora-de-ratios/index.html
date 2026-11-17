@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de ratios de café | TazaRitual</title>
+<meta name="description" content="Calcula el agua exacta para tu café: elige V60, Chemex, prensa francesa, Aeropress, moka o cold brew, ajusta el ratio y obtén molienda, tiempo y pasos.">
+<link rel="canonical" href="https://tazaritual.com/herramientas/calculadora-de-ratios/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TazaRitual">
+<meta property="og:title" content="Calculadora de ratios de café | TazaRitual">
+<meta property="og:description" content="Calcula el agua exacta para tu café: elige V60, Chemex, prensa francesa, Aeropress, moka o cold brew, ajusta el ratio y obtén molienda, tiempo y pasos.">
+<meta property="og:url" content="https://tazaritual.com/herramientas/calculadora-de-ratios/">
+<meta property="og:image" content="https://tazaritual.com/assets/img/portada-hero.webp">
+<meta property="og:locale" content="es_LA">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="google-adsense-account" content="ca-pub-3527045319039824">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3527045319039824"
+     crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/assets/css/style.css?v=6">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<style>
+.calc-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.5rem; margin: 1.5rem 0; }
+.calc-box label { display: block; font-weight: 600; margin: 1rem 0 0.4rem; }
+.calc-box label:first-child { margin-top: 0; }
+.calc-box select, .calc-box input[type="number"] { width: 100%; max-width: 22rem; padding: 0.6rem 0.7rem; border: 1px solid var(--border); border-radius: 8px; font: inherit; color: var(--text); background: var(--bg); }
+.calc-box input[type="range"] { width: 100%; max-width: 22rem; accent-color: var(--accent); }
+.calc-hint { font-size: 0.88rem; color: var(--text-soft); margin: 0.3rem 0 0; }
+.calc-result { margin-top: 1.5rem; border-top: 1px solid var(--border); padding-top: 1.25rem; }
+.calc-water { font-family: var(--font-title); font-size: 2.2rem; font-weight: 700; color: var(--accent-dark); margin: 0.2rem 0 0.5rem; }
+.calc-result dl { display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 1rem; margin: 0 0 1rem; }
+.calc-result dt { font-weight: 600; }
+.calc-result dd { margin: 0; }
+.calc-result ol { margin: 0.5rem 0 0; padding-left: 1.4rem; }
+.calc-result li { margin-bottom: 0.35em; }
+.calc-note { font-size: 0.9rem; color: var(--text-soft); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://tazaritual.com/herramientas/calculadora-de-ratios/#aplicacion",
+      "url": "https://tazaritual.com/herramientas/calculadora-de-ratios/",
+      "name": "Calculadora de ratios de café",
+      "description": "Calcula el agua exacta para tu café: elige V60, Chemex, prensa francesa, Aeropress, moka o cold brew, ajusta el ratio y obtén molienda, tiempo y pasos.",
+      "inLanguage": "es",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Web",
+      "datePublished": "2026-11-16",
+      "dateModified": "2026-11-16",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://tazaritual.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Herramientas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Calculadora de ratios"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/" aria-label="TazaRitual — inicio">
+        <svg class="logo-mark" viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><circle cx="24" cy="24" r="22.5" fill="#2A1B12"/><path d="M15 21h18v7c0 5.5-4 9.5-9 9.5s-9-4-9-9.5v-7z" fill="#F6EFE4"/><path d="M33 23c4.5 0 4.5 7 0 7" fill="none" stroke="#F6EFE4" stroke-width="2.6" stroke-linecap="round"/><path d="M14 39.5h20" stroke="#C08A3E" stroke-width="2.4" stroke-linecap="round"/><path d="M20.5 17.5c-2.2-2.6 2.2-4 0-6.8" fill="none" stroke="#C08A3E" stroke-width="2.2" stroke-linecap="round"/><path d="M26.5 17.5c-2.2-2.6 2.2-4 0-6.8" fill="none" stroke="#C08A3E" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span class="logo-word">Taza<em>Ritual</em></span>
+      </a>
+    <nav id="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="/" aria-current="page">Inicio</a></li>
+        <li><a href="/metodos/">Métodos</a></li>
+        <li><a href="/guias/">Guías</a></li>
+        <li><a href="/comparativas/">Comparativas</a></li>
+        <li><a href="/recetas/">Recetas</a></li>
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="search-link" href="/buscar/" aria-label="Buscar en el sitio">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+        Buscar
+      </a>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- PEGAR CÓDIGO ADSENSE AQUÍ — slot: header | Ver ADSENSE.md. No pegar sin cuenta aprobada. -->
+<div class="ad-slot" data-ad-slot="header" aria-hidden="true"></div>
+
+<main id="contenido">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Migas de pan">
+      <ol>
+        <li><a href="/">Inicio</a></li>
+        <li>Herramientas</li>
+        <li aria-current="page">Calculadora de ratios</li>
+      </ol>
+    </nav>
+    <article class="page-content">
+      <h1>Calculadora de ratios de café</h1>
+      <p>Elige tu método, indica cuánto café vas a usar y la calculadora te dice cuánta agua necesitas, con qué molienda y en cuánto tiempo. Es la forma más rápida de preparar una taza equilibrada sin adivinar las cantidades.</p>
+
+      <h2>¿Qué es el ratio café-agua?</h2>
+      <p>El ratio es la proporción entre el café molido y el agua. Se escribe como 1:16, que significa 1 gramo de café por cada 16 mililitros de agua. Un ratio bajo (por ejemplo, 1:13) da una taza más intensa; un ratio alto (por ejemplo, 1:17) da una taza más suave y ligera. Cada método tiene un rango recomendado: dentro de ese rango puedes ajustar el ratio a tu gusto, subiendo el agua si la taza te sale demasiado fuerte o bajándola si te sale aguada.</p>
+
+      <div class="calc-box">
+        <label for="metodo">Método de preparación</label>
+        <select id="metodo">
+          <option value="v60">V60</option>
+          <option value="chemex">Chemex</option>
+          <option value="prensa">Prensa francesa</option>
+          <option value="aeropress">Aeropress</option>
+          <option value="moka">Moka</option>
+          <option value="coldbrew">Cold brew</option>
+        </select>
+
+        <label for="dosis">Café (gramos)</label>
+        <input type="number" id="dosis" min="5" max="500" step="1" value="15">
+        <p class="calc-hint">Pesa el café en una balanza: la cuchara no es precisa.</p>
+
+        <label for="tazas">Número de tazas (opcional)</label>
+        <input type="number" id="tazas" min="1" max="20" step="1" placeholder="Ej.: 2">
+        <p class="calc-hint">Si lo rellenas, la dosis se calcula como 15 g de café por taza (una taza ≈ 240 ml).</p>
+
+        <label for="variante-coldbrew" id="variante-label" hidden>Tipo de cold brew</label>
+        <select id="variante-coldbrew" hidden>
+          <option value="8">Concentrado (1:8) — para diluir al servir</option>
+          <option value="10">Listo para tomar (1:10)</option>
+        </select>
+
+        <label for="ratio">Ratio café:agua — <output id="ratio-valor" for="ratio">1:16</output></label>
+        <input type="range" id="ratio" min="15" max="17" step="0.5" value="16">
+        <p class="calc-hint" id="ratio-rango">Rango recomendado para V60: 1:15 – 1:17.</p>
+
+        <div class="calc-result" id="resultado" aria-live="polite">
+          <p><strong>Agua necesaria</strong></p>
+          <p class="calc-water"><span id="agua">240</span> ml</p>
+          <dl>
+            <dt>Ratio</dt>
+            <dd id="res-ratio">1:16</dd>
+            <dt>Café</dt>
+            <dd><span id="res-dosis">15</span> g</dd>
+            <dt>Molienda</dt>
+            <dd id="res-molienda">Media, como sal de mesa</dd>
+            <dt>Tiempo</dt>
+            <dd id="res-tiempo">2:30 – 3:30 min</dd>
+          </dl>
+          <p><strong>Pasos</strong></p>
+          <ol id="res-pasos"></ol>
+          <p class="calc-note" id="res-nota"></p>
+        </div>
+      </div>
+
+      <h2>¿Por qué cambia el ratio según el método?</h2>
+      <p>Los métodos de inmersión, como la prensa francesa o el cold brew, mantienen el café en contacto con el agua durante más tiempo y extraen con más facilidad, así que suelen usar menos agua por gramo de café. Los métodos de filtrado por vertido, como el V60 o el Chemex, dejan pasar el agua más rápido y necesitan más agua para extraer lo mismo. La moka trabaja con poca agua y café fino, por eso su ratio es el más bajo de todos. Estos valores son puntos de partida estándar: ajústalos según el tueste y tu gusto.</p>
+
+      <h2>Seguir aprendiendo</h2>
+      <ul>
+        <li><a href="/articulos/guia-de-ratios-cafe-agua/">Guía de ratios café-agua para cada método</a></li>
+        <li><a href="/articulos/v60-vs-chemex/">V60 vs Chemex: cuál elegir según tu gusto</a></li>
+        <li><a href="/articulos/cold-brew-en-casa/">Cold brew en casa: receta, ratios y errores comunes</a></li>
+      </ul>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p class="footer-brand">TazaRitual</p>
+      <p>Café de especialidad en casa: métodos, guías y recetas.</p>
+      <button id="open-cookie-settings" type="button">Preferencias de cookies</button>
+    </div>
+    <nav aria-label="Explorar">
+      <h2>Explorar</h2>
+      <ul>
+        <li><a href="/metodos/">Métodos</a></li>
+        <li><a href="/guias/">Guías</a></li>
+        <li><a href="/comparativas/">Comparativas</a></li>
+        <li><a href="/recetas/">Recetas</a></li>
+        <li><a href="/archivo/">Archivo</a></li>
+        <li><a href="/buscar/">Buscar</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Legal">
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="/privacidad/">Política de privacidad</a></li>
+        <li><a href="/cookies/">Política de cookies</a></li>
+        <li><a href="/terminos/">Términos de uso</a></li>
+        <li><a href="/aviso-legal/">Aviso legal</a></li>
+        <li><a href="/derechos-de-autor/">Derechos de autor</a></li>
+        <li><a href="/creditos/">Créditos de imágenes</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <p class="footer-legal">© <span data-year>2026</span> TazaRitual · Café de especialidad en casa</p>
+  </div>
+</footer>
+
+<div id="cookie-banner" hidden role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <div class="container">
+    <p>Usamos cookies para mejorar tu experiencia y, con tu permiso, para analítica y publicidad. <a href="/cookies/">Lee nuestra política de cookies</a>.</p>
+    <div class="cookie-buttons">
+      <button type="button" class="cookie-accept">Aceptar</button>
+      <button type="button" class="cookie-reject">Rechazar</button>
+      <button type="button" class="cookie-config">Configurar</button>
+    </div>
+  </div>
+</div>
+
+<dialog id="cookie-modal" aria-labelledby="cookie-modal-title">
+  <div class="cookie-modal-inner">
+    <h2 id="cookie-modal-title">Preferencias de cookies</h2>
+    <p>Elige qué cookies permites. Las necesarias siempre están activas porque el sitio no funciona sin ellas.</p>
+    <div class="cookie-category">
+      <div><strong>Necesarias</strong><p class="cookie-desc">Imprescindibles para el funcionamiento básico del sitio.</p></div>
+      <input type="checkbox" checked disabled aria-label="Cookies necesarias, siempre activas">
+    </div>
+    <div class="cookie-category">
+      <div><strong>Preferencias</strong><p class="cookie-desc">Recuerdan tus ajustes, como el idioma o tus elecciones.</p></div>
+      <input type="checkbox" name="cc-preferences" aria-label="Cookies de preferencias">
+    </div>
+    <div class="cookie-category">
+      <div><strong>Analítica</strong><p class="cookie-desc">Nos ayudan a entender cómo se usa el sitio para mejorarlo.</p></div>
+      <input type="checkbox" name="cc-analytics" aria-label="Cookies de analítica">
+    </div>
+    <div class="cookie-category">
+      <div><strong>Publicidad</strong><p class="cookie-desc">Permiten mostrar anuncios relevantes y medir su rendimiento.</p></div>
+      <input type="checkbox" name="cc-advertising" aria-label="Cookies de publicidad">
+    </div>
+    <div class="cookie-buttons" style="margin-top:1.25rem">
+      <button type="button" class="cookie-accept cookie-save">Guardar preferencias</button>
+    </div>
+  </div>
+</dialog>
+
+<script src="/assets/js/main.js?v=2" defer></script>
+<script src="/assets/js/consent.js?v=2" defer></script>
+<script>
+/* Calculadora de ratios de café — JS puro, sin dependencias. */
+var METODOS = {
+  v60: {
+    nombre: "V60", ratioMin: 15, ratioMax: 17, ratioDef: 16,
+    molienda: "Media, como sal de mesa",
+    tiempo: "2:30 – 3:30 min",
+    pasos: [
+      "Calienta el agua a 92–96 °C y enjuaga el filtro de papel con agua caliente.",
+      "Añade el café y vierte el doble de agua que de café; espera 30–45 s (bloom).",
+      "Vierte el resto del agua en círculos lentos hasta completar la cantidad calculada.",
+      "Deja que termine de gotear dentro del tiempo indicado y sirve."
+    ],
+    nota: ""
+  },
+  chemex: {
+    nombre: "Chemex", ratioMin: 15, ratioMax: 17, ratioDef: 16,
+    molienda: "Media-gruesa, como azúcar moreno",
+    tiempo: "4:00 – 5:00 min",
+    pasos: [
+      "Calienta el agua a 92–96 °C y enjuaga el filtro grueso de la Chemex.",
+      "Añade el café y vierte el doble de agua que de café; espera 30–45 s (bloom).",
+      "Vierte el resto del agua en espirales lentas hasta completar la cantidad calculada.",
+      "Retira el filtro cuando termine de gotear y sirve."
+    ],
+    nota: ""
+  },
+  prensa: {
+    nombre: "Prensa francesa", ratioMin: 14, ratioMax: 16, ratioDef: 15,
+    molienda: "Gruesa, como sal gruesa",
+    tiempo: "4:00 min de inmersión",
+    pasos: [
+      "Añade el café molido grueso a la jarra y vierte el agua a 94 °C.",
+      "Remueve, tapa con el émbolo arriba y deja reposar 4 minutos.",
+      "Baja el émbolo despacio y sirve de inmediato para que no siga extrayendo."
+    ],
+    nota: ""
+  },
+  aeropress: {
+    nombre: "Aeropress", ratioMin: 13, ratioMax: 15, ratioDef: 14,
+    molienda: "Media-fina, como sal fina",
+    tiempo: "1:30 – 2:00 min",
+    pasos: [
+      "Coloca el filtro de papel enjuagado en la tapa y enrosca.",
+      "Añade el café y el agua, remueve durante 10 segundos.",
+      "Coloca el émbolo y presiona despacio durante 20–30 segundos."
+    ],
+    nota: ""
+  },
+  moka: {
+    nombre: "Moka", ratioMin: 9, ratioMax: 11, ratioDef: 10,
+    molienda: "Fina, como sal fina",
+    tiempo: "3–5 min a fuego medio-bajo",
+    pasos: [
+      "Llena la base con agua caliente hasta justo debajo de la válvula de seguridad.",
+      "Llena el embudo con el café molido fino, sin compactarlo.",
+      "Enrosca la parte superior y calienta a fuego medio-bajo hasta que el café suba; retira del fuego en cuanto empiece a burbujear."
+    ],
+    nota: "En la moka el agua la limita la capacidad de la base: usa esta cantidad como referencia y ajusta a la capacidad de tu cafetera."
+  },
+  coldbrew: {
+    nombre: "Cold brew", ratioMin: 8, ratioMax: 10, ratioDef: 8,
+    molienda: "Muy gruesa, como granos de pimienta molida gruesa",
+    tiempo: "12–16 h de reposo",
+    pasos: [
+      "Mezcla el café molido grueso con el agua a temperatura ambiente en un frasco.",
+      "Tapa y deja reposar entre 12 y 16 horas fuera de la nevera.",
+      "Filtra dos veces (primero un colador, luego un filtro de papel) y sirve sobre hielo."
+    ],
+    nota: "El concentrado (1:8) se diluye al servir, mitad cold brew y mitad agua o leche. La versión 1:10 se sirve tal cual."
+  }
+};
+
+function calcularAgua(dosisGramos, ratio) {
+  return Math.round(dosisGramos * ratio);
+}
+
+function formatoRatio(ratio) {
+  return "1:" + (Number.isInteger(ratio) ? ratio : ratio.toFixed(1));
+}
+
+if (typeof document !== "undefined") {
+  var metodoSel = document.getElementById("metodo");
+  var dosisInput = document.getElementById("dosis");
+  var tazasInput = document.getElementById("tazas");
+  var varianteSel = document.getElementById("variante-coldbrew");
+  var varianteLabel = document.getElementById("variante-label");
+  var ratioInput = document.getElementById("ratio");
+  var ratioValor = document.getElementById("ratio-valor");
+  var ratioRango = document.getElementById("ratio-rango");
+
+  function aplicarMetodo() {
+    var m = METODOS[metodoSel.value];
+    var esColdBrew = metodoSel.value === "coldbrew";
+    varianteSel.hidden = !esColdBrew;
+    varianteLabel.hidden = !esColdBrew;
+    if (esColdBrew) {
+      ratioInput.min = 8;
+      ratioInput.max = 10;
+      ratioInput.step = 1;
+      ratioInput.value = varianteSel.value;
+    } else {
+      ratioInput.min = m.ratioMin;
+      ratioInput.max = m.ratioMax;
+      ratioInput.step = 0.5;
+      ratioInput.value = m.ratioDef;
+    }
+    ratioRango.textContent = "Rango recomendado para " + m.nombre + ": " + formatoRatio(m.ratioMin) + " – " + formatoRatio(m.ratioMax) + ".";
+    calcular();
+  }
+
+  function calcular() {
+    var m = METODOS[metodoSel.value];
+    var tazas = parseFloat(tazasInput.value);
+    var dosis;
+    if (!isNaN(tazas) && tazas > 0) {
+      dosis = Math.round(tazas * 15);
+      dosisInput.value = dosis;
+    } else {
+      dosis = parseFloat(dosisInput.value);
+    }
+    if (isNaN(dosis) || dosis <= 0) {
+      document.getElementById("agua").textContent = "—";
+      return;
+    }
+    var ratio = parseFloat(ratioInput.value);
+    document.getElementById("agua").textContent = calcularAgua(dosis, ratio);
+    document.getElementById("res-ratio").textContent = formatoRatio(ratio);
+    document.getElementById("res-dosis").textContent = dosis;
+    document.getElementById("res-molienda").textContent = m.molienda;
+    document.getElementById("res-tiempo").textContent = m.tiempo;
+    ratioValor.textContent = formatoRatio(ratio);
+    var pasos = document.getElementById("res-pasos");
+    pasos.innerHTML = "";
+    m.pasos.forEach(function (paso) {
+      var li = document.createElement("li");
+      li.textContent = paso;
+      pasos.appendChild(li);
+    });
+    document.getElementById("res-nota").textContent = m.nota;
+  }
+
+  metodoSel.addEventListener("change", aplicarMetodo);
+  varianteSel.addEventListener("change", aplicarMetodo);
+  dosisInput.addEventListener("input", calcular);
+  tazasInput.addEventListener("input", calcular);
+  ratioInput.addEventListener("input", calcular);
+  aplicarMetodo();
+}
+</script>
+</body>
+</html>

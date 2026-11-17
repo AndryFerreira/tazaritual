@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tazaritual.com/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://tazaritual.com/nosotros/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://tazaritual.com/articulos/v60-vs-chemex/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -98,37 +98,37 @@
   </url>
   <url>
     <loc>https://tazaritual.com/articulos/cold-brew-en-casa/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tazaritual.com/articulos/guia-cafetera-moka-bialetti/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tazaritual.com/articulos/prensa-francesa-perfecta/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tazaritual.com/articulos/aeropress-dos-recetas/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tazaritual.com/articulos/como-elegir-molinillo-manual/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tazaritual.com/articulos/cafe-de-especialidad-vs-comercial/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -140,13 +140,13 @@
   </url>
   <url>
     <loc>https://tazaritual.com/articulos/guia-de-ratios-cafe-agua/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tazaritual.com/articulos/espresso-en-casa-sin-maquina-cara/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -236,7 +236,7 @@
   </url>
   <url>
     <loc>https://tazaritual.com/articulos/niveles-de-tueste-del-cafe/</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -364,5 +364,11 @@
     <loc>https://tazaritual.com/creditos/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tazaritual.com/herramientas/calculadora-de-ratios/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

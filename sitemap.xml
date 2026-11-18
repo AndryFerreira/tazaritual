@@ -361,6 +361,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://tazaritual.com/articulos/cafe-de-olla-receta-tradicional/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tazaritual.com/creditos/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

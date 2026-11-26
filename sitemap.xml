@@ -26,13 +26,13 @@
   </url>
   <url>
     <loc>https://tazaritual.com/recetas/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tazaritual.com/archivo/</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -393,6 +393,12 @@
   <url>
     <loc>https://tazaritual.com/articulos/cafe-dalgona-receta/</loc>
     <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tazaritual.com/articulos/cafe-bombon-receta/</loc>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
